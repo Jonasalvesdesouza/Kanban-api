@@ -22,7 +22,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "migrate": "prisma migrate dev --schema=./src/infra/data/prisma/schema.prisma",
-    "migrate:deploy": "npx prisma migrate deploy"
+    "migrate:deploy": "npx prisma migrate deploy --schema=./src/infra/data/prisma/schema.prisma"
   },
   "dependencies": {
     "@apollo/server": "^4.10.4",
